@@ -19,5 +19,8 @@ int main(){
     int remainder = students % 3; // remainder = students % 3
     std::cout << "Remainder when students is divided by 3: " << remainder << std::endl;
 
+    int student1 = 6 - 5 + 4 * 2; // student1 = 6 - 5 + 4 * 2
+    std::cout << "Result of 6 - 5 + 4 * 2: " << student1 << std::endl;
+
     return 0;
 }
