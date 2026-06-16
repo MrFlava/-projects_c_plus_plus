@@ -13,4 +13,5 @@ int main() {
         std::cout << "You too old to enter." << std::endl;
     }
 
+    return 0;
 }
