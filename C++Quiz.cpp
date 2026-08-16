@@ -24,5 +24,22 @@ int main() {
     };
 
     int answers [] = {2, 0, 3, 0, 2};
+
+    int size = sizeof(questions) / sizeof(questions[0]);
+    char guess;
+    int score = 0;
+
+    for (int i = 0; i < size; i++) {
+        std::cout << questions[i] << std::endl;
+        for (int j = 0; j < 4; j++) {
+            std::cout << options[i][j] << std::endl;
+        }
+        std::cout << "Enter your guess: ";
+        std::cin >> guess;
+        if (guess == 'a' + answers[i]) {
+            score++;
+        }
+    }
+    std::cout << "Your score is: " << score << "/" << size << std::endl;
     return 0;
 }
